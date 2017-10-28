@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+*.pyc
+*.log
+*.bak
+*.ppt*
+*.pdf
+team42/nlp/__pycache__
+team42/nlp/lib
