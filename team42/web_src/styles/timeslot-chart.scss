@@ -1,0 +1,39 @@
+@import "config";
+
+.time-slot-chart {
+  table.time-slot-chart-table {
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    width: auto;
+    border-collapse: collapse;
+    td {
+      padding: 2px;
+      width: 24px;
+      height: 24px;
+      border: 1px solid black;
+      background-color: #ffffff;
+      font-size: rem-calc(10);
+
+      &.row-header {
+        border: none;
+      }
+
+      &.column-header {
+        border: none;
+        text-align: center;
+        span {
+          position: relative;
+          right: 12px;
+        }
+      }
+
+      div.time-slot {
+        background-color: $primary-color;
+        border-radius: 50%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+    }
+  }
+}

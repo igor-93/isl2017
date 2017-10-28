@@ -1,0 +1,43 @@
+{% extends "instaTrack/base.html" %}
+
+
+
+{% block subtitle %}
+Register
+{% endblock subtitle %}
+
+
+{% block content %}
+    <div class="center-box-wrapper">
+    <div>
+        <div class="box-title-block">Register</div>
+        <div class="sign-up-box">
+         <div class="error-message">{{ login_error }}</div>
+        {% if registered %}
+            <strong>Thank you for registering!</strong>
+            <a href="/instaTrack/">Return to the homepage.</a><br />
+        {% else %}
+            <form id="user_form" method="post" action="{% url 'instaTrack:register' %}"
+                    enctype="multipart/form-data">
+
+                {% csrf_token %}
+
+                <!-- Display each form. The as_p method wraps each element in a paragraph
+                     (<p>) element. This ensures each element appears on a new line,
+                     making everything look neater. -->
+
+                        {{ user_form.as_p }}
+                        {{ profile_form.as_p }}
+
+
+                <!-- Provide a button to click to submit the form. -->
+                <input type="submit" name="submit" class="button" value="Register" />
+            </form>
+        {% endif %}
+            <hr />
+            <p>Already have an account: <a href="{% url 'instaTrack:user_login' %}">Login</a></p>
+     </div>
+    </div>
+    </div>
+
+{% endblock content %} 

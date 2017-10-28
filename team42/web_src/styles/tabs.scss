@@ -1,0 +1,68 @@
+@import "config";
+
+  .tab-links {
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid $secondary-color;
+  };
+
+  .tab-link {
+    display: inline-block;
+    border: 1px solid $secondary-color;
+    background-color: $white;
+    color: $secondary-color;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-top-left-radius: $box-border-radius;
+    border-top-right-radius: $box-border-radius;
+    &.tab-link-active {
+      background: $secondary-color;
+      border-color: $secondary-color;
+      color: $white;
+    }
+  };
+
+/*  .react-tabs [role=tab][aria-disabled=true] {
+    color: gray;
+    cursor: default;
+  };*/
+
+/*  .react-tabs [role=tab]:focus {
+    box-shadow: 0 0 5px hsl(208, 99%, 50%);
+    border-color: hsl(208, 99%, 50%);
+    outline: none;
+  };*/
+
+/*  .react-tabs [role=tab]:focus:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: -4px;
+    right: -4px;
+    bottom: -5px;
+    background: #fff;
+  }*/
+
+  .tab-content {
+    border-width: 2px;
+    border-style: solid;
+    padding: 16px;
+    @include breakpoint(small down) {
+      padding: 8px 0;
+    }
+    -webkit-border-image:
+      -webkit-gradient(linear, 0 0, 0 100%, from($secondary-color), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image:
+      -webkit-linear-gradient($secondary-color, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient($secondary-color, rgba(0, 0, 0, 0)) 1 100%;
+    -o-border-image:
+      -o-linear-gradient($secondary-color, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, $secondary-color, rgba(0, 0, 0, 0)) 1 100%;
+    border-top: none;
+  }

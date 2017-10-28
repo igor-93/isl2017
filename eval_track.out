@@ -1,0 +1,270 @@
+{
+	"_id" : ObjectId("5916dc5a288a92261e580ffc"),
+	"instagram_username" : "moira_photography",
+	"data" : [
+		{
+			"nr_followers" : 4751,
+			"timestamp" : ISODate("2017-05-16T21:00:01.217Z")
+		},
+		{
+			"nr_followers" : 4808,
+			"timestamp" : ISODate("2017-05-17T21:00:02.314Z")
+		},
+		{
+			"nr_followers" : 4877,
+			"timestamp" : ISODate("2017-05-19T21:00:00.827Z")
+		},
+		{
+			"nr_followers" : 4910,
+			"timestamp" : ISODate("2017-05-20T21:00:00.938Z")
+		},
+		{
+			"nr_followers" : 4953,
+			"timestamp" : ISODate("2017-05-21T21:00:01.391Z")
+		},
+		{
+			"nr_followers" : 4981,
+			"timestamp" : ISODate("2017-05-22T21:00:01.651Z")
+		},
+
+		+230
+
+		{
+
+			"nr_followers" : 4998,
+			"timestamp" : ISODate("2017-05-23T21:00:00.921Z")
+		},
+		{
+			"nr_followers" : 5027,
+			"timestamp" : ISODate("2017-05-24T21:00:01.445Z")
+		},
+		{
+			"nr_followers" : 5051,
+			"timestamp" : ISODate("2017-05-25T21:00:00.745Z")
+		},
+		{
+			"nr_followers" : 5071,
+			"timestamp" : ISODate("2017-05-26T21:00:01.002Z")
+		},
+		{
+			"nr_followers" : 5122,
+			"timestamp" : ISODate("2017-05-27T21:00:01.351Z")
+		},
+		{
+			"nr_followers" : 5167,
+			"timestamp" : ISODate("2017-05-28T21:00:01.716Z")
+		},
+		{
+			"nr_followers" : 5206,
+			"timestamp" : ISODate("2017-05-29T21:00:01.137Z")
+		}
+
+		+207
+
+
+	]
+}
+
+
+
+
+{
+	"_id" : ObjectId("5916d702288a920eac1b5026"),
+	"instagram_username" : "philibertbarelli_photographie",
+	"data" : [
+		{
+			"nr_followers" : 656,
+			"timestamp" : ISODate("2017-05-16T21:00:01.192Z")
+		},
+		{
+			"nr_followers" : 665,
+			"timestamp" : ISODate("2017-05-17T21:00:02.285Z")
+		},
+		{
+			"nr_followers" : 709,
+			"timestamp" : ISODate("2017-05-19T21:00:00.797Z")
+		},
+		{
+			"nr_followers" : 715,
+			"timestamp" : ISODate("2017-05-20T21:00:00.908Z")
+		},
+		{
+			"nr_followers" : 721,
+			"timestamp" : ISODate("2017-05-21T21:00:01.360Z")
+		},
+
+		+ 65
+
+
+		{
+			"nr_followers" : 741,
+			"timestamp" : ISODate("2017-05-22T21:00:01.619Z")
+		},
+		{
+			"nr_followers" : 753,
+			"timestamp" : ISODate("2017-05-23T21:00:00.887Z")
+		},
+		{
+			"nr_followers" : 764,
+			"timestamp" : ISODate("2017-05-24T21:00:01.414Z")
+		},
+		{
+			"nr_followers" : 784,
+			"timestamp" : ISODate("2017-05-25T21:00:00.711Z")
+		},
+		{
+			"nr_followers" : 791,
+			"timestamp" : ISODate("2017-05-26T21:00:00.968Z")
+		},
+		{
+			"nr_followers" : 819,
+			"timestamp" : ISODate("2017-05-27T21:00:01.316Z")
+		},
+		{
+			"nr_followers" : 832,
+			"timestamp" : ISODate("2017-05-28T21:00:01.681Z")
+		},
+		{
+			"nr_followers" : 841,
+			"timestamp" : ISODate("2017-05-29T21:00:01.101Z")
+		}
+
+
+		+100
+	]
+}
+
+
+
+
+
+> db.nr_followers.find({instagram_username:"ceez_ruf"}).pretty()
+{
+	"_id" : ObjectId("591ac120288a923242a4d14a"),
+	"instagram_username" : "ceez_ruf",
+	"data" : [
+		{
+			"nr_followers" : 634,
+			"timestamp" : ISODate("2017-05-16T21:00:01.219Z")
+		},
+		{
+			"nr_followers" : 633,
+			"timestamp" : ISODate("2017-05-17T21:00:02.317Z")
+		},
+		{
+			"nr_followers" : 631,
+			"timestamp" : ISODate("2017-05-19T21:00:00.830Z")
+		},
+		{
+			"nr_followers" : 629,
+			"timestamp" : ISODate("2017-05-20T21:00:00.940Z")
+		},
+		{
+			"nr_followers" : 630,
+			"timestamp" : ISODate("2017-05-21T21:00:01.394Z")
+		},
+		{
+			"nr_followers" : 631,
+			"timestamp" : ISODate("2017-05-22T21:00:01.654Z")
+		},
+		{
+			"nr_followers" : 634,
+			"timestamp" : ISODate("2017-05-23T21:00:00.923Z")
+		},
+
+
+		+0
+
+
+		{
+			"nr_followers" : 633,
+			"timestamp" : ISODate("2017-05-24T21:00:01.448Z")
+		},
+		{
+			"nr_followers" : 630,
+			"timestamp" : ISODate("2017-05-25T21:00:00.747Z")
+		},
+		{
+			"nr_followers" : 630,
+			"timestamp" : ISODate("2017-05-26T21:00:01.005Z")
+		},
+		{
+			"nr_followers" : 632,
+			"timestamp" : ISODate("2017-05-27T21:00:01.354Z")
+		},
+		{
+			"nr_followers" : 636,
+			"timestamp" : ISODate("2017-05-28T21:00:01.719Z")
+		},
+		{
+			"nr_followers" : 633,
+			"timestamp" : ISODate("2017-05-29T21:00:01.139Z")
+		}
+
+
+		+0
+	]
+}
+
+
+{
+	"_id" : ObjectId("5916dc5a288a92261e580fe6"),
+	"instagram_username" : "patriesphoto",
+	"data" : [
+		{
+			"nr_followers" : 842,
+			"timestamp" : ISODate("2017-05-16T21:00:01.194Z")
+		},
+		{
+			"nr_followers" : 844,
+			"timestamp" : ISODate("2017-05-17T21:00:02.287Z")
+		},
+		{
+			"nr_followers" : 846,
+			"timestamp" : ISODate("2017-05-19T21:00:00.800Z")
+		},
+		{
+			"nr_followers" : 848,
+			"timestamp" : ISODate("2017-05-20T21:00:00.911Z")
+		},
+		{
+			"nr_followers" : 847,
+			"timestamp" : ISODate("2017-05-21T21:00:01.363Z")
+		},
+		{
+			"nr_followers" : 846,
+			"timestamp" : ISODate("2017-05-22T21:00:01.622Z")
+		},
+		{
+			"nr_followers" : 845,
+			"timestamp" : ISODate("2017-05-23T21:00:00.890Z")
+		},
+
+
+
+		{
+			"nr_followers" : 846,
+			"timestamp" : ISODate("2017-05-24T21:00:01.416Z")
+		},
+		{
+			"nr_followers" : 847,
+			"timestamp" : ISODate("2017-05-25T21:00:00.714Z")
+		},
+		{
+			"nr_followers" : 843,
+			"timestamp" : ISODate("2017-05-26T21:00:00.971Z")
+		},
+		{
+			"nr_followers" : 844,
+			"timestamp" : ISODate("2017-05-27T21:00:01.319Z")
+		},
+		{
+			"nr_followers" : 845,
+			"timestamp" : ISODate("2017-05-28T21:00:01.684Z")
+		},
+		{
+			"nr_followers" : 844,
+			"timestamp" : ISODate("2017-05-29T21:00:01.106Z")
+		}
+	]
+}

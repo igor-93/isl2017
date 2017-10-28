@@ -1,0 +1,34 @@
+@import "config";
+
+.stats-box {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+
+  .stats-box-title {
+    text-transform: uppercase;
+    color: $dark-gray;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stats-box-value {
+    font-size: 2rem;
+    color: $stat-color;
+    line-height: 1.125;
+  }
+
+  .stats-box-change {
+    font-size: 0.75rem;
+    line-height: 1;
+  }
+
+  &.alert .stats-box-value {
+    color: $alert-color;
+  }
+  &.warning .stats-box-value {
+    color: $warning-color;
+  }
+}

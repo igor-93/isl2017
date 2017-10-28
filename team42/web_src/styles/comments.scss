@@ -1,0 +1,64 @@
+@import "config";
+
+.comment-item-simple {
+  .comment-head {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: rem-calc(14);
+    flex-wrap: wrap-reverse;
+  }
+  .comment-text{
+    font-size: rem-calc(12);
+  }
+}
+
+.comment-list-item {
+  &.list-item-content {
+    align-items: stretch;
+  }
+  .list-item-info {
+    max-height: $list-item-img-size;
+    overflow: hidden;
+  }
+  .comment-head {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    flex-wrap: wrap-reverse;
+  }
+  .comment-text{
+  }
+}
+
+.comment-details {
+  .comment-details-username {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .comment-details-text {
+    margin-left: 16px;
+    padding: 8px;
+    align-self: flex-start;
+  }
+}
+
+.neutral{
+  background-color: hsl(60, 85%, 85%);
+}
+
+.positive{
+  background-color: hsl(116, 50%, 70%);
+}
+
+.verypositive{
+  background-color: hsl(116, 100%, 70%);
+}
+
+.negative{
+  background-color: hsl(0, 50%, 70%);
+}
+
+.verynegative{
+  background-color: hsl(0, 100%, 70%);
+}

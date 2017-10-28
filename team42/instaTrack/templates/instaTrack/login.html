@@ -1,0 +1,34 @@
+{% extends "instaTrack/base.html" %}
+
+
+
+{% block subtitle %}
+Login
+{% endblock subtitle %}
+
+
+{% block content %}
+    <div class="center-box-wrapper">
+    <div>
+        <div class="box-title-block">Login</div>
+        <div class="login-box">
+         <div class="error-message">{{ login_error }}</div>
+         <form id="login_form" method="post" action="{% url 'instaTrack:user_login' %}">
+            <input type="hidden" name="redirect_url" value="{{ redirect_url }}">
+            {% csrf_token %}
+            <label>
+                 Dandli Username:
+                 <input type="text" name="username" value="" size="50" autofocus="autofocus"/>
+             </label>
+             <label>
+                 Dandli Password:
+                 <input type="password" name="password" value="" size="50" />
+             </label>
+            <input type="submit" value="Login" class="button"/>
+         </form>
+            <hr />
+            <p>Don't have an account: <a href="{% url 'instaTrack:register' %}">Register</a></p>
+     </div>
+    </div>
+    </div>
+{% endblock content %} 

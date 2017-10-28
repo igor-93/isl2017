@@ -1,0 +1,64 @@
+{% extends "instaTrack/base.html" %}
+
+
+
+{% block subtitle %}
+    Home
+{% endblock subtitle %}
+
+
+{% block content %}
+
+    <div class="index no-padding">
+        <section id="titleSection" class="content-section title-section has-bg bg-header">
+            <div class="title-section-title">
+                <div class="app-logo">
+                    <svg class="icon app-icon">
+                        <use class="icon_dandli " xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_dandli"></use>
+                    </svg>
+                    <span class="app-name">Dandli</span>
+                </div>
+                <div>
+                    <a class="button primary" href="{% url 'instaTrack:user_login' %}" >Login</a>
+                    <a class="button primary" href="{% url 'instaTrack:register' %}" >Register</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- First About-->
+
+        <section data-animate="flip-left" class="content-section " id="first">
+            <h2>Welcome</h2>
+            <p>Dandli is a simple application designed for professional Instagram users, to help keep track of your content and expand your network.</p>
+        </section>
+
+
+        <!-- Second About -->
+
+
+        <section class="content-section  has-bg bg-cuisine-small parallax">
+            <h2 data-animate="grow-fade-in">See Reactions</h2>
+            <p data-animate="grow-fade-in">Easily check what impact your posts have, by looking at out performance visualizations. Quickly find important comments and respond immediately.</p>
+        </section>
+
+
+        <!-- Third About -->
+
+
+        <section data-animate="flip-right" class="content-section " >
+            <h2>Personalized Recommendations</h2>
+            <p>Want to know how to do things? Why not look at how other users are doing it? With our app, you can simply mark users, which share the same goal as you, and get recommendations for tags and timing.</p>
+        </section>
+
+
+        <section data-animate="flip-right" class="content-section " >
+            <h2>Keep Your Network Clean</h2>
+            <p>To grow your network, it is important to appear as a high quality content producer. This should also reflect in your interests. Therefore we will show you people how might not be worthy of your follow anymore, e.g. unpopular or inactive users.</p>
+        </section>
+    </div>
+
+{% endblock content %} 
+
+
+
+

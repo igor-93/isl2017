@@ -1,0 +1,17 @@
+@import "config";
+
+.text-box {
+  .text-box-title {
+    text-transform: uppercase;
+    color: $dark-gray;
+    border-bottom: 1px solid $dark-gray;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .text-box-text {
+    padding: 4px;
+    font-size: rem-calc(14);
+  }
+}

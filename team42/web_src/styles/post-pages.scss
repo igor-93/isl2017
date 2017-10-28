@@ -1,0 +1,103 @@
+@import "config";
+@import "util";
+
+.item-details.post-details {
+  .post-comment-list {
+    overflow-y: auto;
+  }
+
+  .published-info {
+    text-align: right;
+    font-size: rem-calc(14);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .post-comment-list {
+  .list-view {
+    height: 300px;
+  }
+}
+}
+
+.comment-item {
+  .comment-head {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: rem-calc(14);
+  }
+}
+
+.neutral{
+  background-color: hsl(60, 85%, 85%);
+}
+
+.positive{
+  background-color: hsl(116, 50%, 70%);
+}
+
+.verypositive{
+  background-color: hsl(116, 100%, 70%);
+}
+
+.negative{
+  background-color: hsl(0, 50%, 70%);
+}
+
+.verynegative{
+  background-color: hsl(0, 100%, 70%);
+}
+
+.comment-text{
+  font-size: rem-calc(12);
+}
+
+.post-list-item {
+  &.list-item-content {
+    align-items: stretch;
+  }
+  .post-list-item-header {
+    font-weight: 600;
+    text-align: right;
+  }
+  .post-likes {
+    .fa {
+      color: $heart-red;
+    }
+  }
+
+  .post-likes-pm {
+    .fa {
+      color: $heart-red;
+    }
+  }
+
+  .post-comments {
+    .fa {
+      color: $light-gray;
+    }
+  }
+}
+
+.reactions-list {
+  .reaction {
+    display: inline-block;
+    border-right: 1px solid $light-gray;
+    padding: 0 8px;
+    font-size: rem-calc(18);
+
+    &:last-child {
+      border: none;
+    }
+
+    .reaction-text {
+      margin-right: 4px;
+    }
+
+    .reaction-count {
+      color: $primary-color;
+      font-weight: 600;
+    }
+  }
+}

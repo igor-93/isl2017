@@ -1,0 +1,133 @@
+import React from 'react';
+import posts from '../../posts';
+
+export default class PostsPage extends React.Component {
+
+    render() {
+        return (
+            <div style={{
+                marginLeft: "10%",
+                marginRight: "10%",
+                paddingTop: "1px",
+                border: '10px solid black',
+                position: 'relative',
+                overflow: 'hidden',}} >
+
+                <div style={{
+                    width: '30%',
+                    display: 'inline-block',
+                    }}>
+                    <PostList posts={posts}></PostList>
+                </div>
+
+                <div style={{
+                    width: '65%',
+                    display: 'inline-block',
+                    float: 'right',
+                    display: 'table'}}>
+                    <Post style={{
+                    display: 'table-row'}} key={0} post={posts[0]}> </Post>
+                    <CommentList style={{
+                    display: 'table-row'}} comments={posts[0].comments}></CommentList>
+                </div>
+            </div>
+        );
+    }
+}
+
+class PostList extends React.Component {
+	render () {
+		return (
+			<ul style={{
+			    listStyleType: "none",
+                backgroundColor: '#ffb3cc',}}>
+
+                {this.props.posts.map((post, i) =>
+                <li>
+                    <PostItem
+                        key={i}
+                        post={post}>
+                    </PostItem>
+                </li>
+)}
+			</ul>
+		);
+	}
+}
+
+class CommentList extends React.Component {
+	render () {
+		return (
+			<ul style={{
+			    listStyleType: "none",
+                backgroundColor: '#ffb3cc',}}>
+
+                {this.props.comments.map((comment, i) =>
+                <li>
+                    <Comment
+                        key={i}
+                        comment={comment}>
+                    </Comment>
+                </li>
+)}
+			</ul>
+		);
+	}
+}
+
+class Comment extends React.Component {
+    	render () {
+		return (
+                <p style={{
+                            width: '95%',
+                            backgroundColor: '#0080ff',
+                            display: 'inline-block',
+                            overflow: "hidden",
+                        }}>
+                    {this.props.comment}
+                </p>
+		);
+	}
+}
+
+class PostItem extends React.Component {
+    	render () {
+		return (
+                <div style={{
+                            width: '95%',
+                            backgroundColor: '#0080ff',
+                            display: 'inline-block',
+                            overflow: "hidden",
+                        }}>
+
+                    <img src={this.props.post.imgSrc}
+                         style={{
+                            width: '150px',
+                            height: '110px',
+                            border: `10px solid $black`,
+                            marginTop: "10px",
+                            marginLeft: "10px",
+                            marginBottom: "10px",
+                        }}
+                    />
+                </div>
+		);
+	}
+}
+
+class Post extends React.Component {
+    	render () {
+		return (
+            <PostItem key={this.props.key}
+                      post={this.props.post}>
+            </PostItem>
+		);
+	}
+}
+
+
+PostsPage.propTypes = {};
+
+PostsPage.defaultProps = {};
+
+PostsPage.displayName = 'PostsPage';

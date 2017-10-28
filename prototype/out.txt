@@ -1,0 +1,360 @@
+{
+  "sentences": [
+    {
+      "tokens": [
+        {
+          "word": "It",
+          "originalText": "It",
+          "pos": "PRP",
+          "characterOffsetBegin": 0,
+          "index": 1,
+          "characterOffsetEnd": 2,
+          "before": "",
+          "after": " "
+        },
+        {
+          "word": "sucks",
+          "originalText": "sucks",
+          "pos": "VBZ",
+          "characterOffsetBegin": 3,
+          "index": 2,
+          "characterOffsetEnd": 8,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "word": ".",
+          "originalText": ".",
+          "pos": ".",
+          "characterOffsetBegin": 8,
+          "index": 3,
+          "characterOffsetEnd": 9,
+          "before": "",
+          "after": " "
+        },
+        {
+          "word": "I",
+          "originalText": "I",
+          "pos": "PRP",
+          "characterOffsetBegin": 10,
+          "index": 4,
+          "characterOffsetEnd": 11,
+          "before": " ",
+          "after": " "
+        },
+        {
+          "word": "hate",
+          "originalText": "hate",
+          "pos": "VBP",
+          "characterOffsetBegin": 12,
+          "index": 5,
+          "characterOffsetEnd": 16,
+          "before": " ",
+          "after": " "
+        },
+        {
+          "word": "it",
+          "originalText": "it",
+          "pos": "PRP",
+          "characterOffsetBegin": 17,
+          "index": 6,
+          "characterOffsetEnd": 19,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "word": ".",
+          "originalText": ".",
+          "pos": ".",
+          "characterOffsetBegin": 19,
+          "index": 7,
+          "characterOffsetEnd": 20,
+          "before": "",
+          "after": " "
+        },
+        {
+          "word": "Beautiful",
+          "originalText": "Beautiful",
+          "pos": "JJ",
+          "characterOffsetBegin": 21,
+          "index": 8,
+          "characterOffsetEnd": 30,
+          "before": " ",
+          "after": " "
+        },
+        {
+          "word": "day",
+          "originalText": "day",
+          "pos": "NN",
+          "characterOffsetBegin": 31,
+          "index": 9,
+          "characterOffsetEnd": 34,
+          "before": " ",
+          "after": " "
+        },
+        {
+          "word": "today",
+          "originalText": "today",
+          "pos": "NN",
+          "characterOffsetBegin": 35,
+          "index": 10,
+          "characterOffsetEnd": 40,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "word": ".",
+          "originalText": ".",
+          "pos": ".",
+          "characterOffsetBegin": 40,
+          "index": 11,
+          "characterOffsetEnd": 41,
+          "before": "",
+          "after": ""
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "governor": 0,
+          "dependent": 5,
+          "dependentGloss": "hate",
+          "dep": "ROOT",
+          "governorGloss": "ROOT"
+        },
+        {
+          "governor": 2,
+          "dependent": 1,
+          "dependentGloss": "It",
+          "dep": "nsubj",
+          "governorGloss": "sucks"
+        },
+        {
+          "governor": 5,
+          "dependent": 2,
+          "dependentGloss": "sucks",
+          "dep": "dep",
+          "governorGloss": "hate"
+        },
+        {
+          "governor": 2,
+          "dependent": 3,
+          "dependentGloss": ".",
+          "dep": "punct",
+          "governorGloss": "sucks"
+        },
+        {
+          "governor": 5,
+          "dependent": 4,
+          "dependentGloss": "I",
+          "dep": "nsubj",
+          "governorGloss": "hate"
+        },
+        {
+          "governor": 9,
+          "dependent": 6,
+          "dependentGloss": "it",
+          "dep": "nsubj",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 9,
+          "dependent": 7,
+          "dependentGloss": ".",
+          "dep": "punct",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 9,
+          "dependent": 8,
+          "dependentGloss": "Beautiful",
+          "dep": "amod",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 5,
+          "dependent": 9,
+          "dependentGloss": "day",
+          "dep": "ccomp",
+          "governorGloss": "hate"
+        },
+        {
+          "governor": 9,
+          "dependent": 10,
+          "dependentGloss": "today",
+          "dep": "nmod:tmod",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 5,
+          "dependent": 11,
+          "dependentGloss": ".",
+          "dep": "punct",
+          "governorGloss": "hate"
+        }
+      ],
+      "line": 1,
+      "sentimentValue": "3",
+      "index": 0,
+      "sentiment": "Positive",
+      "parse": "(ROOT\n  (S\n    (S\n      (NP (PRP It))\n      (VP (VBZ sucks))\n      (. .))\n    (NP (PRP I))\n    (VP (VBP hate)\n      (SBAR\n        (S\n          (NP (PRP it))\n          (VP (. .)\n            (NP-TMP (JJ Beautiful) (NN day))\n            (NP-TMP (NN today))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "governor": 0,
+          "dependent": 5,
+          "dependentGloss": "hate",
+          "dep": "ROOT",
+          "governorGloss": "ROOT"
+        },
+        {
+          "governor": 2,
+          "dependent": 1,
+          "dependentGloss": "It",
+          "dep": "nsubj",
+          "governorGloss": "sucks"
+        },
+        {
+          "governor": 5,
+          "dependent": 2,
+          "dependentGloss": "sucks",
+          "dep": "dep",
+          "governorGloss": "hate"
+        },
+        {
+          "governor": 2,
+          "dependent": 3,
+          "dependentGloss": ".",
+          "dep": "punct",
+          "governorGloss": "sucks"
+        },
+        {
+          "governor": 5,
+          "dependent": 4,
+          "dependentGloss": "I",
+          "dep": "nsubj",
+          "governorGloss": "hate"
+        },
+        {
+          "governor": 9,
+          "dependent": 6,
+          "dependentGloss": "it",
+          "dep": "nsubj",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 9,
+          "dependent": 7,
+          "dependentGloss": ".",
+          "dep": "punct",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 9,
+          "dependent": 8,
+          "dependentGloss": "Beautiful",
+          "dep": "amod",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 5,
+          "dependent": 9,
+          "dependentGloss": "day",
+          "dep": "ccomp",
+          "governorGloss": "hate"
+        },
+        {
+          "governor": 9,
+          "dependent": 10,
+          "dependentGloss": "today",
+          "dep": "nmod:tmod",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 5,
+          "dependent": 11,
+          "dependentGloss": ".",
+          "dep": "punct",
+          "governorGloss": "hate"
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "governor": 0,
+          "dependent": 5,
+          "dependentGloss": "hate",
+          "dep": "ROOT",
+          "governorGloss": "ROOT"
+        },
+        {
+          "governor": 2,
+          "dependent": 1,
+          "dependentGloss": "It",
+          "dep": "nsubj",
+          "governorGloss": "sucks"
+        },
+        {
+          "governor": 5,
+          "dependent": 2,
+          "dependentGloss": "sucks",
+          "dep": "dep",
+          "governorGloss": "hate"
+        },
+        {
+          "governor": 2,
+          "dependent": 3,
+          "dependentGloss": ".",
+          "dep": "punct",
+          "governorGloss": "sucks"
+        },
+        {
+          "governor": 5,
+          "dependent": 4,
+          "dependentGloss": "I",
+          "dep": "nsubj",
+          "governorGloss": "hate"
+        },
+        {
+          "governor": 9,
+          "dependent": 6,
+          "dependentGloss": "it",
+          "dep": "nsubj",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 9,
+          "dependent": 7,
+          "dependentGloss": ".",
+          "dep": "punct",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 9,
+          "dependent": 8,
+          "dependentGloss": "Beautiful",
+          "dep": "amod",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 5,
+          "dependent": 9,
+          "dependentGloss": "day",
+          "dep": "ccomp",
+          "governorGloss": "hate"
+        },
+        {
+          "governor": 9,
+          "dependent": 10,
+          "dependentGloss": "today",
+          "dep": "nmod:tmod",
+          "governorGloss": "day"
+        },
+        {
+          "governor": 5,
+          "dependent": 11,
+          "dependentGloss": ".",
+          "dep": "punct",
+          "governorGloss": "hate"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{% extends "instaTrack/base.html" %}
+
+
+
+{% block subtitle %}
+    About
+{% endblock subtitle %}
+
+
+{% block content %}
+
+    <section class="content-section about-section">
+        <h1 id="whatisdandlihttp129132114138000">What is <a href="http://129.132.114.13:8000/">Dandli</a> ?</h1>
+
+        <p><strong>Dandli</strong> is a web application helping professional photographers to increase their engagement on Instagram. </p>
+
+        <p><img src="../../static/overview.png" alt="alt text" /></p>
+    </section>
+
+    <section class="content-section about-section">
+        <h1 id="features">Features</h1>
+
+        <p>We tackle the engagement problem by solving following common problems for a photographer:</p>
+
+    </section>
+    <section class="content-section about-section">
+
+        <h3 id="comments">Comments</h3>
+
+        <p>If you are one of those users who receive a considerable amount of comments on your posts, you probably like to first prioritise them, and answer back only negative ones. Answering/considering negative comments on social media (Youtube, Twitter, etc.) has been proven to be essential to keep your fans convinced of your content.  </p>
+
+        <p><strong>Dandli</strong> makes it easier for you by classifying your comments into <em>Positive</em>, <em>Negative</em> and <em>Neutral</em> based on their content with a sentiment analysis tool.  </p>
+
+        <p>In addition, <strong>Dandli</strong> sort your comments from all previous posts and show you only the most recent onces, this way you won't miss any of your comments, no matter if it is posted on a new or a very old picture.</p>
+
+        <p><img src="../../static/comments_list.png" alt="alt tag" /></p>
+
+        <h3 id="hashtagrecommendations">Hashtag recommendations</h3>
+
+        <p><strong>Hashtags</strong> are another very important element of social media. If chosen right, they can bring you more audience through the built-in search of Instagram based on <strong>Hashtags</strong>. A very common problem is that a user does not know which <strong>Hashtags</strong> to use.  </p>
+
+        <p><strong>Dandli</strong> tackles this problem by assuming that the content of your page is relevant to some other very famous photographers. This way, by analysing the <strong>Hashtags</strong> of one or more of these famous photographers, it suggests you the most useful <strong>Hashtags</strong> used by those users. </p>
+
+        <p>Let's say you'd like to post a picture of a lion in the nature. If you choose three of your favourite famous professional photographers who take photos of only animals and nature, then you only need to give the name of those users to <strong>Dandli</strong> and then it gives you back the most useful <strong>Hashtags</strong> of those users. </p>
+
+        <p>If you choose to use one of these <strong>Hashtags</strong>, just click on it and a small text field with the choosen <strong>Hashtag</strong> will apear so you can easily copy/past it. </p>
+
+        <p><img src="../../static/best_hashtags.png" alt="alt text" /></p>
+
+        <h3 id="posttimereccomendations">Post time reccomendations</h3>
+
+        <p><strong>Time to Post</strong> is a very important element of social media. It can affect the number of likes you get in a significant way.
+            This problem is also solved exactly the same way <strong>Hashtags</strong> are solved. You simply need to choose some of your favourite users  and then find out which times of posting were the best for those users. Of course, this does not mean the best time to post per se, maybe those users never post at Monday evening, thus we won't have any information of how good Monday evening is. But the goal is rather to find out the best times of posts that works well for those users.</p>
+
+        <p><img src="../../static/best_time.png" alt="alt text" /></p>
+
+        <h3 id="unfollowsuggestions">Unfollow suggestions</h3>
+
+        <p>Another subtle problem is to keep your followers-to-following ratio high.  Intrinsically, we thing that users with more number of followers, and few number of follows are better to follow, as it may be a sign that their content is of a better quality (Followers are not following you only because they are followed by you mutually, they are following you rather for your content).
+            Often times we follow some active users, in the hope that not only them, but also their followers find us and start following them. But in many cases we may choose a wrong user to follow. <strong>Dandli</strong> will actively track the users you are following, and rank them based on their recent activity on Instagram. Then the result is a list of your follows sorted by their activities, with the least active ones at the top. Those users at the top may be a good choice for you to unfollow (unless they are friends, or you are simply interested by their content) as it helps keeping the number of your follows low.</p>
+
+        <p><img src="../../static/unfollow_list.png" alt="alt text" /></p>
+    </section>
+    <section class="content-section about-section">
+        <h1 id="howtostart">How to start ?</h1>
+
+        <p>First go to <a href="129.132.114.13:8000">Dandli home page</a>. If you don't have an account already, click on <strong>Register</strong> to create a new account for yourself, otherwise got to the <a href="#1.2-login">next step</a></p>
+
+        <p><img src="../../static/first_page.png" alt="alt text" /></p>
+    </section>
+
+    <section class="content-section about-section">
+        <h3 id="11register">1.1 Register</h3>
+
+        <p>Here you need to choose a username first, put your email address (we won't spam you by no means!) choose a password and finally enter your current Instagram account.</p>
+
+        <ul>
+            <li>Please note that the password is <strong>not</strong> your instagram's password. We don't need that. Just choose a password for your new account on <strong>Dandli</strong>.</li>
+
+            <li>As you may have guessed, the fact that we don't need you Instagram's password means that your Instagram's account must be a <strong>public</strong> account so that we can use your information.</li>
+        </ul>
+
+        <p><img src="../../static/register.png" alt="alt text" /></p>
+
+        <h3 id="12login">1.2 Login</h3>
+
+        <p>Simply enter your <strong>Dandli</strong> username and password to login. </p>
+
+        <ul>
+            <li>Again note that these are <strong>not</strong> your instagram's username and password. </li>
+        </ul>
+
+        <p><img src="../../static/login.png" alt="alt text" /></p>
+
+        <p>After login, you will be redirected to the <strong>Dandli</strong> page where you can have an overview of your account. Now let see what other sections are:</p>
+
+        <h3 id="13recentposts">1.3 Recent posts</h3>
+
+        <p><strong>Recent posts</strong> shows you the list of your recent posts with some overview information about your likes, etc. </p>
+
+        <p>In addition, you can see the corresponding comments for each post, where all comments are classified by their sentiments: {<strong>Green:</strong> <em>Positive</em>, <strong>Yellow:</strong> <em>Neutral</em>, <strong>Red</strong>: <em>Negative</em>}
+            You can always click on any of the posts and will be redirected to the corresponding Instagram's page.</p>
+
+        <p><img src="../../static/recent_posts.png" alt="alt text" /></p>
+
+    <h3 id="14recentcomments">1.4 Recent comments</h3>
+
+    <p><strong>Recent comments</strong> main purpose is to sort your recent comments so that you can confortably answer back those comments, even if they are posted on some old photos. This is specially useful if you have a large number of photos. Of course they are also classified to their sentiments: : {<strong>Green:</strong> <em>Positive</em>, <strong>Yellow:</strong> <em>Neutral</em>, <strong>Red</strong>: <em>Negative</em>}. </p>
+
+    <p>In addition, you can filter your comments so that only <em>Negative</em> ones are shown. This helps to make it easier to first reply those comments as they have a higher priority.
+        <img src="../../static/recent_comments.png" alt="alt text" /></p>
+
+    <h3 id="15hashtagtimesuggestions">1.5 Hashtag/Time Suggestions</h3>
+
+    <p>If this is the first time you open this section, you won't have any favourite users yet. You should first add users by their name or username in the <strong>Add User</strong>.  You can add as many as favourite users that you are instersted in.</p>
+
+    <p><img src="../../static/add_user.png" alt="alt text" /></p>
+
+    <p>Once a user is added, they will be shown on the list on the left hand side. You can click on them to show more details. There you can see both most efficient tags for these users and most efficient post times for these users. </p>
+
+    <p><img src="../../static/targets.png" alt="alt text" /></p>
+
+    <h5 id="151hashtagsuggestions">1.5.1 Hashtag suggestions</h5>
+
+    <p>You may wonder how these suggestions are generated. Basically <strong>Dandli</strong> has a <em>Post_Score</em> for each post of a user. The <em>Post_Score</em> is based on the ratio of number of likes for a post to the number of followers of a user. So the more likes a post gets, and the less followers in general they have the higher <em>Post_Score</em>.</p>
+
+    <p>So an efficient <strong>Hashtag</strong> for a specific user is computed by a combination of total <em>Post_Score</em>s related to that hashtag (over all posts where it has been used) and the total polularity of the <strong>hashtag</strong> on Instagram. This first criteria makes sure that the <strong>hashtag</strong> brings indeed more likes, and the second criteria makes sure that the <strong>Hashtag</strong> is a popular one, and that there is a high chance somebody search it on Instagram and get redirected to your posts.</p>
+
+    <h5 id="152posttimesuggestions">1.5.2 Post Time suggestions</h5>
+
+    <p><strong>Post time</strong> suggestions are also similar to <strong>hashtags</strong>, they are based on the <em>Post_Score</em>s for each time slot shown. </p>
+
+    <ul>
+        <li>Note that the time suggestions are in <strong>UTC</strong>.</li>
+    </ul>
+
+    <h3 id="16unfollowsuggestions">1.6 Unfollow Suggestions</h3>
+
+    <p>This is a list of you follows, sorted by their recent activity. The top user is colored <strong>red</strong> which indicates that this user is the most inactive of your follows and they can be a good choice to be unfollowed.</p>
+
+    <p>The inactivity is based on the average number of post in last two weeks compared to the four weeks before that (6 weeks ago).</p>
+
+    <p><img src="../../static/unfollows.png" alt="alt text" /></p>
+
+    </section>
+
+{% endblock content %} 

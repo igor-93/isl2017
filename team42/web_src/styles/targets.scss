@@ -1,0 +1,25 @@
+@import "config";
+
+.list-item-view.target-item-aggregated {
+  background-color: rgba($primary-color, 0.3);
+  border-color: $primary-color;
+}
+
+.target-remove-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+#wordCloudCanvas{
+  width: 80%;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 16px;
+  display: block;
+}
+
+#targetDetailsTagInput {
+  margin-bottom: 16px;
+}
